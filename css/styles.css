@@ -542,3 +542,78 @@ button[type="reset"] {
     display: block !important;
   }
 }
+
+/*
+==================================
+VALIDAÇÃO MESSAGE BOX - FORMULÁRIO
+==================================
+*/
+
+#messagebox {
+  position: fixed;
+  bottom: var(--space-3);
+  left: var(--space-3);
+  background-color: var(--color-white);
+  border-left: 5px solid;
+  border-radius: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 10000;
+  font-family: "Segoe UI", sans-serif;
+  font-size: var(--font-padrao-peq2);
+  font-weight: 500;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+#messagebox.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-10px);
+}
+
+#messagebox.success {
+  border-color: #4caf50;
+  color: #2e7d32;
+  background-color: #e8f5e9;
+}
+
+#messagebox.error {
+  border-color: #f44336;
+  color: #c62828;
+  background-color: #ffebee;
+}
+
+#messagebox .icon {
+  font-size: var(--font-padrao-med);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+}
+
+/* MODO ESCURO PARA MENSAGENS */
+[data-theme="dark"] #messagebox {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] #messagebox.success {
+  border-color: #66bb6a;
+  color: #a5d6a7;
+  background-color: #1b5e20;
+}
+
+[data-theme="dark"] #messagebox.error {
+  border-color: #f44336;
+  color: #ffcdd2;
+  background-color: #b71c1c;
+}
