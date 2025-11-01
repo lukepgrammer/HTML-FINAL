@@ -258,6 +258,7 @@ textarea:focus {
 
 input:invalid {
   border-color: var(--color-alert);
+  box-shadow: 0 0 0 4px rgba(234, 119, 119, 0.15);
 }
 
 button[type="submit"],
