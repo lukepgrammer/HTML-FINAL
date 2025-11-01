@@ -8,18 +8,19 @@
     <title>Cadastro | Eldermaxxing</title>
   </head>
   <body>
-    <header class="navbar">
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <header class="navbar" role="banner">
       <!-- Menu hamburguer -->
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-      <nav class="nav-links">
+      <button class="menu-toggle" aria-label="Abrir menu" tabindex="0">☰</button>
+      <nav class="nav-links" id="nav-links" role="navegation" aria-label="Menu principal">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="index.html" tabindex="0">Inicio</a></li>
+          <li><a href="projetos.html" tabindex="0">Projetos</a></li>
         </ul>
       </nav>
       <h1>Cadastro de voluntários</h1>
     </header>
-    <main>
+    <main id="main-content" role="main">
       <br />
       <picture>
         <source
@@ -44,7 +45,7 @@
       <section>
         <h3 style="text-align: center; color: var(--color-primary-dark);">Área de formulário</h3> <!-- A propriedade style sobrepoe as regras dos seletores -->
         <!-- Só uma gambiarra porque eu quebrei a centralização do titulo -->
-        <p style="font-size: 20px; color: black; text-align: center">
+        <p style="font-size: 20px; color: black; text-align: center; max-width: 60ch; margin-left: auto; margin-right: auto;">
           Seja bem-vindo ao formulário de voluntários da ONG Eldermaxxing!
           Estamos felizes em saber que você deseja se juntar a nós na missão de
           promover um envelhecimento saudável e ativo para pessoas idosas. Por
@@ -198,5 +199,8 @@
     &copy; 2025 ONG Eldermaxxing | Todos os direitos reservados.
   </footer>
   <script src="js/main.js"></script> <!-- Ouvi dizer que num mundo civilizado as pessoas colocam o script no final e não no head-->
+  <button class="theme-toggle" aria-label="Alternar entre modo claro e escuro" tabindex="0">
+    🌞
+  </button>
 </body>
 </html>

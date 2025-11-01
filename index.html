@@ -8,7 +8,8 @@
     <link rel="icon" type="image/icon" href="imagens/favicon.ico" />
   </head>
   <body>
-    <header class="navbar">
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+    <header class="navbar" role="banner">
       <h1>Bem-vindos a ONG Eldermaxxing</h1>
       <em class="frase-legal">Por um envelhecimento com afeto e saúde</em>
 
@@ -18,21 +19,22 @@
         aria-label="Abrir menu"
         aria-expanded="false"
         aria-controls="nav-links"
+        tabindex="0"
       >
         ☰
       </button>
-      <nav class="nav-links" id="nav-links">
+      <nav class="nav-links" id="nav-links" role="navegation" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="cadastro.html">Cadastro</a></li>
-          <li><a href="teste.html">Página de testes</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main id="main-content"role="main">
+      <section aria-labelledby="sobre-nos">
+        <h2 id="sobre-nos" class="visually-hidden">Sobre nós</h2>
         <p id="texto-principal">
           A Eldermaxxing é uma ONG dedicada a promover o
           <mark>envelhecimento saudável</mark> e ativo para pessoas idosas.
@@ -82,5 +84,9 @@
       </section>
     </main>
     <script src="js/main.js"></script>
+    <!-- O botão fica fixado na parte inferior de todas as páginas-->
+    <button class="theme-toggle" aria-label="Alternar entre modo claro e escuro" tabindex="0">
+    🌞
+    </button>
   </body>
 </html>

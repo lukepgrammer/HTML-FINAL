@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/main.js"></script>
-  <link rel="icon" type="image/icon" href="imagens/favicon.ico">
-  <title>Projetos sociais | Eldermaxxing</title>
-</head>
-<body>
-  <header class="navbar">
-    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-    <nav class="nav-links">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
-    <h1>Nossos projetos</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
+    <link rel="icon" type="image/icon" href="imagens/favicon.ico" />
+    <title>Projetos sociais | Eldermaxxing</title>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+    <header class="navbar" role="banner">
+      <button class="menu-toggle" aria-label="Abrir menu" tabindex="0">
+        ☰
+      </button>
+      <nav
+        class="nav-links"
+        id="nav-links"
+        role="navigation"
+        aria-label="Menu principal"
+      >
+        <ul>
+          <li><a href="index.html" tabindex="0">Inicio</a></li>
+          <li><a href="cadastro.html" tabindex="0">Cadastro</a></li>
+        </ul>
+      </nav>
+      <h1>Nossos projetos</h1>
+    </header>
 
-  <picture>
-    <source media="(max-width: 400px)" srcset="imagens/idoso_atendimento_standard.jpg">
-    <img src="imagens/Atividades-fisicas-1.webp" alt="idosos fazendo atividades físicas ao ar livre" loading="lazy">
-  </picture>
-  <br>
+    <main id="main-content" role="main">
+      <picture>
+        <source
+          media="(max-width: 400px)"
+          srcset="imagens/idoso_atendimento_standard.jpg"
+        />
+        <img
+          src="imagens/Atividades-fisicas-1.webp"
+          alt="idosos fazendo atividades físicas ao ar livre"
+          loading="lazy"
+        />
+      </picture>
+      <br />
 
-  <section>
-    <div class="cartao-projeto-principal">
-      <p>
-        A Eldermaxxing desenvolve diversos projetos sociais voltados para o
-        <mark>envelhecimento saudável</mark> e ativo. Nossos principais
-        projetos incluem:
-      </p>
+      <section>
+        <div class="cartao-projeto-principal">
+          <p>
+            A Eldermaxxing desenvolve diversos projetos sociais voltados para o
+            <mark>envelhecimento saudável</mark> e ativo. Nossos principais
+            projetos incluem:
+          </p>
 
-      <div class="projetos-grid" id="projetos-grid">
-        <!-- (SUPOSTAMENTE) Os cards serão inseridos via JS -->
-      </div>
-    </div>
-  </section>
-  <br>
-
-  <footer class="rodape">
-    Endereço: Rua Terceira Idade, 123 - Cidade da Longevidade, RJ - Brasil
-    <br>
-    <p>&copy; 2025 ONG Eldermaxxing | Todos os direitos reservados.</p>
-  </footer>
-</body>
+          <div class="projetos-grid" id="projetos-grid">
+            <!-- (SUPOSTAMENTE) Os cards serão inseridos via JS -->
+          </div>
+        </div>
+      </section>
+      <br />
+    </main>
+    <footer class="rodape">
+      Endereço: Rua Terceira Idade, 123 - Cidade da Longevidade, RJ - Brasil
+      <br />
+      <p>&copy; 2025 ONG Eldermaxxing | Todos os direitos reservados.</p>
+    </footer>
+    <button class="theme-toggle" aria-label="Alternar entre modo claro e escuro" tabindex="0">
+    🌞
+    </button>
+  </body>
 </html>
